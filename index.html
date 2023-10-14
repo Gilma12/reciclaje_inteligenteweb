@@ -11,7 +11,281 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <style>
+    body {
 
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .color_personal {
+      margin: 0;
+
+      padding: 0;
+      position: relative;
+      background-color: #004800;
+
+    }
+
+    .imgcontainer,
+    body {
+      background-color: #F9F9F9;
+    }
+    .banners{
+
+background: #004800 ;
+      
+
+}
+.carcontiner{
+
+height: 320px;
+      
+
+}
+
+    
+    
+
+    .container_img {
+      display: flex;
+
+      width: 50%;
+      height: 50%;
+
+      left: -20%;
+
+
+
+
+    }
+
+    .media_img {
+
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -50px;
+      left: -10%;
+
+
+    }
+
+    .back::before {
+      content: '';
+      position: relative;
+      display: flex;
+
+      width: 100%;
+      height: 300px;
+
+      background-image: url("{% static 'img/pec3b1a.jpg' %}");
+      background-position: center left;
+      background-size: cover;
+
+
+    }
+
+
+    .media_img::before {
+      content: '';
+      position: relative;
+      display: flex;
+      z-index: 1;
+
+      width: 400px;
+      height: 400px;
+      border-radius: 100%;
+
+      background-image: url("{% static 'img/igor-son-FV_PxCqgtwc-unsplash.jpg' %}");
+
+      background-size: cover;
+    }
+
+    @media screen and (max-width: 770px) {
+      .media_img::before {
+        content: '';
+        position: relative;
+        display: flex;
+        z-index: 1;
+
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        left: -15%;
+
+        background-image: url("{% static 'img/igor-son-FV_PxCqgtwc-unsplash.jpg' %}");
+
+        background-size: cover;
+      }
+
+      .backgroun {
+       
+       
+        height: 200px !important;
+
+      }
+    }
+
+    .card-img1 {
+      height: 200px;
+      border-radius: 40px;
+      position: absolute;
+      
+      min-width: 250px;
+    }
+
+
+    .card-img2 {
+      width: 300px;
+      border-radius: 40px;
+      z-index: 1;
+      position: absolute;
+      left: 200px;
+      bottom: -350px;
+      min-width: 200px;
+    }
+
+
+    @media screen and (max-width: 887px) {
+      .media_img {
+
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -30%;
+       
+
+
+      }
+    }
+    
+    @media screen and (max-width: 770px) {
+      .media_img {
+
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -5%;
+       
+
+
+      }
+    }
+
+    @media screen and (max-width: 509px) {
+      .card-img1 {
+        width: 45%;
+        border-radius: 60px;
+        position: absolute;
+        min-width: 250px;
+      }
+
+      .media_img {
+
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -30%;
+
+        z-index: 1;
+
+
+      }
+      .container_card{
+
+       
+        padding-top: 10px !important;
+      
+
+}
+      .carcontiner{
+
+height: 220px;
+      
+
+}
+
+      .card-img2 {
+        width: 35%;
+        border-radius: 65px;
+        z-index: 1;
+        position: absolute;
+        left: 110px;
+        bottom: -250px;
+        min-width: 200px;
+      }
+
+      .textlader {
+        padding-top: 1px !important;
+        padding-bottom: 5px;
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+      }
+    }
+    .backgroun{
+          width: 100%;
+          height: 300px;
+      position: relative;
+      background: url("{% static 'img/pec3b1a.jpg' %}" )no-repeat center;
+      background-size:cover;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      
+    
+    }
+    
+    .divPrueva2{
+      width: 100%;
+      height: 30rem;
+      border: 1px solid brown;
+      margin: 0 auto;
+   
+
+    }
+    
+    .efect_glass{
+      background: #70707067;
+      backdrop-filter: blur(1.0rem);
+    }
+    .labelhome{
+      
+      display: flex;
+      position: absolute;
+      
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      
+      
+      z-index: 1;
+      margin-left: 100px;
+      align-items: center;
+     
+      
+    }
+    .textoe{
+      
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:#F9F9F9;
+    
+      
+    }
+
+    </style>
 
     <div class="w-100">
     <div class="row-form-errors">
@@ -27,10 +301,10 @@
             <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse" style="">
               <div class="w-100">
                 <div class="row justify-content-center align-items-center g-2">
-                  <div class="col-sm-2"><img src="{% static 'logo/LOGO-VERDE-PNG-150x150 (1).png' %}" width="64dp">
+                  <div class="col-sm-2"><img src="logo/LOGO-VERDE-PNG-150x150 (1).png'" width="64dp">
                   </div>
                   <div class="col-sm-10">
-                    <h3 class="text-white">Reciclaje Inteligente</h3>
+                    <h3 class="">Reciclaje Inteligente</h3>
                   </div>
 
                 </div>
