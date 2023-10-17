@@ -1,5 +1,4 @@
 body {
-
     margin: 0;
     padding: 0;
 
@@ -16,7 +15,7 @@ body {
 
   .imgcontainer,
   body {
-    background-color: #F9F9F9;
+    background-color:white;
   }
 
   .banners {
@@ -211,7 +210,9 @@ body {
 .container5{
   background-color: rgb(136, 93, 36);
 }
-
+.container6{
+  background-color: #136e13;
+}
 
 
 
