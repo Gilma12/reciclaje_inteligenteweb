@@ -185,10 +185,14 @@ body {
   margin-top: 10%;
 }
 .container5{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   background-color: rgb(136, 93, 36);
 }
 .container6{
   width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   background-color: #136e13;
 }
@@ -197,13 +201,23 @@ body {
   position: relative;
   left: 2%;
 }
+.color_green{
+  background-color: #59c459;
+}
 .tex8{
   font-size: 25px;
   position: relative;
   left: 2%;
 }
-.container10{
-  background-color: rgb(56, 51, 51);
+.contenedor_se{
+  position: relative;
+  margin-top: 2%;
+
+}
+footer{
+  background-color:  #136e13;
+  color: #fff;
+  text-align: center;
 }
 
 
